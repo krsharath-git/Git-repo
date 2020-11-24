@@ -1,0 +1,173 @@
+
+@import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:375px){
+    body{
+        margin: 1em auto;
+        width: 90%;
+        height: 100vh;
+        font-size: 13px;
+        background-color: hsl(0, 0%, 81%);
+        font-weight: 500;
+    }
+
+    img{
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .card--content{
+        display: flex;
+        margin-left: 2em;
+        margin-bottom: 2em;
+        align-items: center;
+        padding-top: 2em;
+    }
+
+    .card--content>p{
+        margin-left: 2em;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    p > span{
+        display: grid;
+        line-height: 1.5rem;
+        opacity: 0.8;
+    }
+    
+    section{
+        align-items: flex-start;
+    }
+
+   
+    p:nth-child(3){
+        opacity: 0.8;
+    }
+    
+    .first_card{
+        max-width: 500px;
+        margin-bottom: 3em;
+        background-color: hsl(263, 55%, 52%);
+        border-radius: 1em;
+        align-items: flex-start;
+        padding-bottom: 1em;
+        margin-top: 5em;
+        color: white;
+    }
+
+    h3{
+        display: flex;
+        margin-left: 2em;
+        width: 80%;
+        font-size: large;
+        line-height: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    
+    p{
+        margin-top: 1em;
+        width: 80%;
+        margin-right: auto;
+        margin-left: 2em;
+        line-height: 1.3rem;
+    }
+
+    .second_card{
+        background-color:hsl(217, 19%, 35%);
+        color: white;
+        border-radius: 1em;
+        padding-bottom: 1em;
+    }
+
+    .third_card{
+        background-color: white;
+        border-radius: 1em;
+        margin-top: 1em;
+        padding-bottom: 1em;
+
+    }
+
+    .fourth_card{
+        background-color:  hsl(219, 29%, 14%);
+        border-radius: 1em;
+        margin-top: 1em;
+        padding-bottom: 1em;
+        color: white;
+    }
+
+    .fifth_card{
+        background-color: white;
+        border-radius: 1em;
+        padding-bottom: 1em;
+        margin: 1em 0 2em 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+   
+    body{
+        width: 90%;
+        padding: 0;
+        margin: 1em auto;
+        height: 90vh;
+    }
+    .container{
+            
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+            /* grid-area: 'first first second fifth',
+            'third fourth fourth fifth'; */
+            column-gap: 2em;
+            row-gap: 2em;
+            /* margin: 5em; */
+    }
+
+    .first_card{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;        
+    }
+
+    .second_card{
+        display: grid;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;  
+        grid-row-end: 2;  
+    }
+
+    .third_card {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;  
+        grid-row-end: 3; 
+    }
+
+    .fourth_card {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;  
+        grid-row-end: 3; 
+    }
+
+    .fifth_card {
+        display: grid;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;  
+        grid-row-end: 3; 
+    }
+}
